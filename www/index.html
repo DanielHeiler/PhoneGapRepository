@@ -1,0 +1,659 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Cordova</title>
+		<!-- include phonegap javascript -->
+		<script type="text/javascript" charset="utf-8" src="cordova-2.1.0.js"></script>
+		
+		<!-- include jquery mobile css -->
+		<link rel="stylesheet" href="jquery.mobile-1.2.0.css" />
+		
+		<!-- include jquery javascript -->
+		<script type="text/javascript" src="jquery-1.8.2.js"></script>
+		
+		<!-- include jquery mobile javascript -->
+		<script type="text/javascript" src="jquery.mobile-1.2.0.js"></script>
+		
+		
+		
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+
+	<body>
+	
+	<--!-->
+	
+		<!--homepage-->
+		<div data-role="page" id="home">
+				<div data-theme="a" data-role="header" data-position="fixed">
+					<h2>Startseite</h2>
+					<div style=" text-align:center">
+						<img id="heiler" style="width: 288px; height: 100px" src="http://www.stepstone.de/upload_de/logo/H/logoHeiler_Software_AG_6011DE.gif" />
+					</div>
+				</div>
+				<div  data-role="content">
+					<a href="#articel-page1" data-role="button" id= "articel">Artikel</a>
+					<a href="#product-page" data-role="button" id= "product">Produkt</a>
+					<a href="#formular-page" data-role="button" id= "formular">Formular-Widgets</a>
+					<a href="#hierarchie-page" data-role="button" id= "hierarchie">Hierarchie-Widgets</a>
+				</div>
+		</div>
+			
+			<div data-role="page" id="product-page">
+				<div data-role="header">
+					<h2>Produktsuche</h2>
+				</div>
+				<div data-role=navbar>
+					<ul>
+						<li><a href="#home">Startseite</a></li>
+						<li><a href="#product-page" class="ui-btn-active ui-state-persist">Produktsuche</a></li>
+					</ul>
+				</div>
+				<div data-role="content">
+					<!-- listview jQuery Mobile-->
+					<ul data-role="listview" data-filter="true" id="product-list">
+						<li data-theme="c" href="#"><a>Jacke</a>
+						<div style=" text-align:right">
+						<img class="hose_bild" style="width: 140px; height: 100px"; position: right src="http://www.shirt-selbst.de/files/shirts/image/jacken/jacke-dickies-schwarz.jpg" />
+					</div>
+							<ul data-role="listview" data-inset="true">
+							<div data-role=navbar>
+					<ul>
+						<li><a href="#home">Startseite</a></li>
+						<li><a href="#product-page" >Produktsuche</a></li>
+						<li><a href="#" class="ui-btn-active ui-state-persist">Produktbestandteile</a></li>
+					</ul> 
+				</div>
+				<p></p>
+								<li >Artikelnummer</li>
+									<li>123456</li>
+									<li>654321</li>
+									<li>24582</li>
+									<li>78566</li>
+									<li>07362</li>
+									<li>52430</li>
+							</ul>
+						</li>
+						<li>
+							<a data-transition="slide">Pullover</a>
+							<div style=" text-align:right">
+								<img class="pullover_bild" style="width: 140px; height: 100px"; position: right src="http://www.indoortrends.de/out/pictures/1/sol_h2o-pullover-v-neck_1.jpg" />
+							</div>
+						</li>
+						<li>
+							<a>Hose</a> <div style=" text-align:right">
+						<img class="hose_bild" style="width: 140px; height: 100px"; position: right src="http://www.sonderpaed-online.de/unter/waesch/images/hose.jpg" />
+					</div>
+						</li>
+						<li>
+							<a>Hemden</a>
+						</li>
+						<li>
+							<a>Polos</a>
+						</li>
+						<li>
+							<a>Sweatshirts/T-Shirts</a>
+						</li>
+						<li>
+							<a>Unterwäsche</a>
+						</li>
+						<li>
+							<a>Bademode</a>
+						</li>
+						<li>
+							<a>Businesswear</a>
+						</li>
+						<li>
+							<a>Runway</a>
+						</li>
+						<li>
+							<a>Schue</a>
+						</li>
+						<li>
+							<div data-role="fieldcontain">
+					<select name="accessoires" id="accessoires">
+					<option value="Accessoires">
+						Accessoires
+					</option>
+					<option value="kette">
+						Kette
+					</option>
+					<option value="value">
+						Ring
+					</option>
+					<option value="value">
+						Ohrring
+					</option>
+				</select>
+			</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			
+			<!--articel-page1-->
+			<div data-role="page" id="articel-page1">
+				<div data-role="header">
+					<h2>Artikelsuche</h2>
+				</div>
+				<div data-role=navbar>
+					<ul>
+						<li><a href="#home">Startseite</a></li>
+						<li><a href="#articel-page" class="ui-btn-active ui-state-persist">Artikelsuche</a></li>
+					</ul>
+				</div>
+				<div data-role="content" >
+					<!-- listview jQuery Mobile 		 http://ecx.images-amazon.com/images/I/51JOaE64EFL._SL500_AA300_.jpg"-->
+					<ul data-role="listview" data-filter="true" id="articel-list" >								
+									<li>
+									   <a href="#p1">
+											<p class="my_icon_wrapper">
+												<img style="width: 140px; height: 100px"; src="http://ecx.images-amazon.com/images/I/51JOaE64EFL._SL500_AA300_.jpg"/>
+											</p>
+											<h3>123456</h3>
+											<p>samsung-Galaxy S3</p>
+									   </a>
+									</li>
+
+									<li>
+									   <a href="#p1">
+											<p class="my_icon_wrapper">
+												<img style="width: 140px; height: 100px"; src="http://ecx.images-amazon.com/images/I/41NXPAmqmuL._SL500_AA300_.jpg"/>
+											</p>
+											<h3>86425</h3>
+											<p>samsung-Galaxy S2</p>
+									   </a>
+									</li>
+									
+									<li>
+									   <a href="#p1">
+											<p class="my_icon_wrapper">
+												<img style="width: 140px; height: 100px"; src="http://blog.testsieger.de/wp-content/uploads/2011/03/samsung-galaxy-ace.jpg"/>
+											</p>
+											<h3>87234</h3>
+											<p>samsung-Galaxy ace</p>
+									   </a>
+									</li>
+									
+									<li>
+									   <a href="#p1">
+											<p class="my_icon_wrapper">
+												<img style="width: 140px; height: 100px"; src="http://blog.testsieger.de/wp-content/uploads/2011/03/samsung-galaxy-ace.jpg"/>
+											</p>
+											<h3>87233</h3>
+											<p>samsung-Galaxy y</p>
+									   </a>
+									</li>
+									
+									<li>
+									   <a href="#p1">
+											<p class="my_icon_wrapper">
+												<img style="width: 140px; height: 100px"; src="http://www.big-screen.de/891543-big-screen-de-wAssets/img/produktbilder/news/news-2009/samsung-5600-handy.jpg"/>
+											</p>
+											<h3>12363</h3>
+											<p>samsung-5600</p>
+									   </a>
+									</li>
+									
+									<li>
+									   <a href="#p1">
+											<p class="my_icon_wrapper">
+												<img style="width: 140px; height: 100px"; src="http://images.netzwelt.de/thumb/27/2012/5272/40690-nokia-lumia-920-display.jpg"/>
+											</p>
+											<h3>56826</h3>
+											<p>nokia-lumia-920</p>
+									   </a>
+									</li>
+										
+									<li>
+									   <a href="#p1">
+											<p class="my_icon_wrapper">
+												<img style="width: 140px; height: 100px"; src="http://www.mobilfunk-talk.de/news/wp-content/uploads/2012/07/nokia-lumia-900.jpg"/>
+											</p>
+											<h3>72145</h3>
+											<p>nokia-lumia-900</p>
+									   </a>
+									</li>
+									
+									<li>
+									   <a href="#p1">
+											<p class="my_icon_wrapper">
+												<img style="width: 140px; height: 100px"; src="http://www.handy-deutschland.de/img/nokia_n8_00.jpg"/>
+											</p>
+											<h3>65218</h3>
+											<p>nokia n8</p>
+									   </a>
+									</li>
+									
+									<li>
+									   <a href="#p1">
+											<p class="my_icon_wrapper">
+												<img style="width: 140px; height: 100px"; src="http://www.blogschrift.biz/uploaded_images/2009/05/nokia-5800-xpressmusic.jpg"/>
+											</p>
+											<h3>78914</h3>
+											<p>nokia-5800-xpressmusic</p>
+									   </a>
+									</li>
+
+									
+									<li>
+									   <a href="#p1">
+											<p class="my_icon_wrapper">
+												<img style="width: 140px; height: 100px"; src="http://g-ecx.images-amazon.com/images/G/03/electronics/detailpage/900/nokia/05.jpg"/>
+											</p>
+											<h3>64524</h3>
+											<p>nokia-n95</p>
+									   </a>
+									</li>
+									
+					</ul>
+				</div>
+				<footer data-role="footer" data-theme="a" data-position="fixed">
+					<h3>
+						<a>1-10</a>
+						<a href="#articel-page2" data-role="button" data-iconpos="right" data-icon="arrow-r" data-theme="b" data-inline="true">Next</a>
+					<h3>
+				</footer>
+			</div>
+			
+			
+			
+			<!--articel-page2-->
+			<div data-role="page" id="articel-page2">
+				<div data-role="header">
+					<h2>Artikelsuche</h2>
+				</div>
+				<div data-role=navbar>
+					<ul>
+						<li><a href="#home">Startseite</a></li>
+						<li><a href="#articel-page1" class="ui-btn-active ui-state-persist">Artikelsuche</a></li>
+					</ul>
+				</div>
+				<div data-role="content" >
+					<!-- listview jQuery Mobile-->
+					<ul data-role="listview" data-filter="true" id="articel-list" >
+					
+						
+						<li>
+							 <a href="#p1">
+								<p class="my_icon_wrapper">
+									<img style="width: 140px; height: 100px"; src="http://www.androider.de/wp-content/uploads/2011/01/motorola-atrix-200x160.jpg"/>
+								</p>
+								<h3>84624</h3>
+								<p>motorola-atrix</p>
+						     </a>
+						</li>
+						
+						
+						<li>
+							 <a href="#p1">
+								<p class="my_icon_wrapper">
+									<img style="width: 140px; height: 100px"; src="http://ecx.images-amazon.com/images/I/41depHeT47L._SL500_AA300_.jpg"/>
+								</p>
+								<h3>45268</h3>
+								<p>motorola-razr</p>
+						     </a>
+						</li>
+						
+						
+						<li>
+							 <a href="#p1">
+								<p class="my_icon_wrapper">
+									<img style="width: 140px; height: 100px"; src="http://i.computer-bild.de/imgs/4/2/1/6/1/7/5/Motorola-Motoluxe-745x559-a7e2d4500c38c3da.jpg"/>
+								</p>
+								<h3>45267</h3>
+								<p>motorola-motoluxe</p>
+						     </a>
+						</li>
+						
+						<li>
+							 <a href="#p1">
+								<p class="my_icon_wrapper">
+									<img style="width: 140px; height: 100px"; src="http://www.chip.de/ii/1/0/1/9/3/6/6/8/7-6a2820e10f7e381e.jpg"/>
+								</p>
+								<h3>45266</h3>
+								<p>motorola-defy</p>
+						     </a>
+						</li>
+						
+						<li>
+							 <a href="#p1">
+								<p class="my_icon_wrapper">
+									<img style="width: 140px; height: 100px"; src="http://www.chip.de/ii/7/4/8/8/2/5/3/e671b58b48705adc.jpg"/>
+								</p>
+								<h3>45265</h3>
+								<p>motorola-milestone</p>
+						     </a>
+						</li>
+						
+						<li>
+							 <a href="#p1">
+								<p class="my_icon_wrapper">
+									<img style="width: 140px; height: 100px"; src="http://www.htc.com/managed-assets/www/smartphones/htc-one-x/marquee-v3/slide-1-white.png"/>
+								</p>
+								<h3>45254</h3>
+								<p>htc-one x</p>
+						     </a>
+						</li>
+						
+						<li>
+							 <a href="#p1">
+								<p class="my_icon_wrapper">
+									<img style="width: 140px; height: 100px"; src="http://www.cnet.de/i/story_media/41560186/htc-one-s-zl.jpg"/>
+								</p>
+								<h3>45253</h3>
+								<p>htc-one-s</p>
+						     </a>
+						</li>
+						
+						<li>
+							 <a href="#p1">
+								<p class="my_icon_wrapper">
+									<img style="width: 140px; height: 100px"; src="http://www.handy-deutschland.de/img/htc_desire.jpg"/>
+								</p>
+								<h3>45252</h3>
+								<p>htc desire</p>
+						     </a>
+						</li>
+						
+						<li>
+							 <a href="#p1">
+								<p class="my_icon_wrapper">
+									<img style="width: 140px; height: 100px"; src="http://www.htc.com/managed-assets/www/smartphones/htc-one-v/marquee-v3/slide-1-gray.png"/>
+								</p>
+								<h3>45251</h3>
+								<p>htc-one-v</p>
+						     </a>
+						</li>
+						
+						<li>
+							 <a href="#p1">
+								<p class="my_icon_wrapper">
+									<img style="width: 140px; height: 100px"; src="http://www.htc-sensation.de/wp-content/uploads/2011/04/htc_sensation_4g.jpg"/>
+								</p>
+								<h3>45264</h3>
+								<p>htc-sensation-4g</p>
+						     </a>
+						</li>
+
+					</ul>
+				</div>
+				<footer data-role="footer" data-theme="a" data-position="fixed">
+					<h3>	
+						<a href="#articel-page1" data-role="button" data-icon="arrow-l" data-theme="b"  data-inline="true">Previous</a>
+						<a>11-20</a>
+						<a href="#articel-page3" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b"  data-inline="true">Next</a>
+					<h3>
+				</footer>
+			</div>
+			
+			
+			<!--articel-page3-->
+			<div data-role="page" id="articel-page3">
+				<div data-role="header">
+					<h2>Artikelsuche</h2>
+				</div>
+				<div data-role=navbar>
+					<ul>
+						<li><a href="#home">Startseite</a></li>
+						<li><a href="#articel-page1" class="ui-btn-active ui-state-persist">Artikelsuche</a></li>
+					</ul>
+				</div>
+				<div data-role="content" >
+					<!-- listview jQuery Mobile-->
+					<ul data-role="listview" data-filter="true" id="articel-list" >
+						<li>
+								 <a href="#p1">
+									<p class="my_icon_wrapper">
+										<img style="width: 140px; height: 100px"; src="http://www.htc.com/managed-assets/www/smartphones/htc-wildfire-s/marquee/handphone.png"/>
+									</p>
+									<h3>45263</h3>
+									<p>htc-wildfire</p>
+								 </a>
+						</li>
+					
+						<li>
+								 <a href="#p1">
+									<p class="my_icon_wrapper">
+										<img style="width: 140px; height: 100px"; src="http://cdn.iphone-news.org/wp-content/uploads/2012/09/iPhone-51-520x312.jpg"/>
+									</p>
+									<h3>96710</h3>
+									<p>iPhone 5</p>
+								 </a>
+						</li>
+							
+						<li>
+								 <a href="#p1">
+									<p class="my_icon_wrapper">
+										<img style="width: 140px; height: 100px"; src="http://www.mobilterminalen.dk/gallerier/iphone-4s-16gb/iphone4s-bilspil.jpg"/>
+									</p>
+									<h3>96711</h3>
+									<p>iPhone 4 s</p>
+								 </a>
+						</li>
+							
+						<li>
+								 <a href="#p1">
+									<p class="my_icon_wrapper">
+										<img style="width: 140px; height: 100px"; src="http://cdn2.pc.de/images/f/c/5/d/842/6fe30d1ebd.jpg"/>
+									</p>
+									<h3>96712</h3>
+									<p>iPhone 3gs</p>
+								 </a>
+						</li>
+							
+						<li>
+								 <a href="#p1">
+									<p class="my_icon_wrapper">
+										<img style="width: 140px; height: 100px"; src="http://www.unitel2000.net/apple-iphone-2g.jpg"/>
+									</p>
+									<h3>96713</h3>
+									<p>iPhone 2g</p>
+								 </a>
+						</li>
+						
+						<li>
+								 <a href="#p1">
+									<p class="my_icon_wrapper">
+										<img style="width: 140px; height: 100px"; src="http://3.bp.blogspot.com/-sibYjGZYHSg/UDDuUo2crdI/AAAAAAAACDM/Wx_qVpOOvMM/s1600/Sony-Ericsson-Xperia-X10.jpg"/>
+									</p>
+									<h3>05478</h3>
+									<p>sony-ericsson-X10</p>
+								 </a>
+						</li>
+						
+						<li>
+								 <a href="#p1">
+									<p class="my_icon_wrapper">
+										<img style="width: 140px; height: 100px"; src="http://api.sonymobile.com/files/xperia-arc-s-mistysilver-620x440.png"/>
+									</p>
+									<h3>05477</h3>
+									<p>sony-ericsson-arc-s</p>
+								 </a>
+						</li>
+						
+						<li>
+								 <a href="#p1">
+									<p class="my_icon_wrapper">
+										<img style="width: 140px; height: 100px"; src="http://www.androider.de/wp-content/uploads/2012/02/Sony-Xperia-P.jpg"/>
+									</p>
+									<h3>05476</h3>
+									<p>sony-xperia-p</p>
+								 </a>
+						</li>
+							
+						<li>
+								 <a href="#p1">
+									<p class="my_icon_wrapper">
+										<img style="width: 140px; height: 100px"; src="http://ecx.images-amazon.com/images/I/41Tov5OPO7L._SL500_AA300_.jpg"/>
+									</p>
+									<h3>05475</h3>
+									<p>ssony-ericsson-xperia-ray</p>
+								 </a>
+						</li>
+						
+						<li>
+								 <a href="#p1">
+									<p class="my_icon_wrapper">
+										<img style="width: 140px; height: 100px"; src="http://thedroidguy.com/wp-content/uploads/2012/02/xperiaU.jpg"/>
+									</p>
+									<h3>57626</h3>
+									<p>ssony-ericsson-xperia-u</p>
+								 </a>
+						</li>
+						
+					</ul>
+				</div>
+				<footer data-role="footer" data-theme="a" data-position="fixed">
+					<h3>	
+						<a href="#articel-page2" data-role="button" data-icon="arrow-l" data-theme="b"  data-inline="true">Previous</a>
+						<a>21-30</a>
+					<h3>
+				</footer>
+			</div>
+					
+			
+			
+			<div data-role="page" id="product-property-page">
+				<div data-role= "header">
+					<h2>Produktbestandteile<h2>
+				</div>
+				<div data-role="content">
+					<ul data-role="listview" data-filter="true" id="articel-list">
+						<li>Jacke</li>
+						<li><a>654321</a></li>
+						<li><a>24582</a></li>
+					</ul>
+				</div>
+				
+				
+			</div>
+			
+			
+	<div data-role="page" id="formular-page">
+		<div data-role="content">
+			<form action="">
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup" >
+						<label for="searchinput1">
+						</label>
+						<input name="" id="searchinput1" placeholder="" value="" type="search" >
+					</fieldset>
+				</div>
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<label for="textinput1">
+							Text Input
+						</label>
+						<input name="" id="textinput1" placeholder="" value="" type="text">
+					</fieldset>
+				</div>
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<label for="textarea1">
+							Text Area
+						</label>
+						<textarea name="" id="textarea1" placeholder=""></textarea>
+					</fieldset>
+				</div>
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<div data-role="fieldcontain">
+							<fieldset data-role="controlgroup" >
+								<label for="toggleswitch1">
+									Toggle Switch
+								</label>
+								<select name="toggleswitch1" id="toggleswitch1" data-theme="" data-mini="true" data-role="slider">
+									<option value="off">
+										Off
+									</option>
+									<option value="on">
+										On
+									</option>
+								</select>
+							</fieldset>
+						</div>
+						<div data-role="fieldcontain">
+							<fieldset data-role="controlgroup">
+								<label for="slider1">
+									Skala1:
+								</label>
+								<input name="slider" value="50" min="0" max="100" data-highlight="false"
+								type="range"/>
+							</fieldset>
+						</div>
+					</div>
+					<div class="ui-block-b">
+						<input value="Submit" data-mini="true" type="submit" />
+						<div data-role="fieldcontain">
+							<fieldset data-role="controlgroup">
+								<label for="slider2">
+									Skala2:
+								</label>
+								<input name="slider" value="50" min="0" max="100" data-highlight="false"
+								type="range"/>
+							</fieldset>
+						</div>
+					</div>
+				</div>
+				<div id="checkboxes1" data-role="fieldcontain">
+					<fieldset data-role="controlgroup" data-type="vertical">
+						<input id="checkbox1" name="" type="checkbox"/>
+						<label for="checkbox1">
+							Checkbox
+						</label>
+					</fieldset>
+				</div>
+				<div data-role="fieldcontain" data-icon="arrow-r">
+					<label for="selectmenu1">
+						Listbox:
+					</label>
+					<select name="Listbox">
+						<option value="option1">
+						   Element 1
+						</option>
+						  <option value="option1">
+						   Element 2
+						</option>
+						  <option value="option1">
+						   Element 3
+						</option>
+					</select>
+				</div>
+
+				 <div data-role="fieldcontain">
+					 <fieldset data-role="controlgroup" >
+						<input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
+						<label for="checkbox-1">Option A</label>
+						 <input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
+						<label for="checkbox-2">Option B</label>
+						 <input type="checkbox" name="checkbox-3" id="checkbox-3" class="custom" />
+						 <label for="checkbox-3"><textarea id="test"  data-role="none"></textarea></label>
+					 </fieldset>
+				 </div>
+		
+		</div>
+
+	</div>
+
+	<div data-role="page" id="hierarchie-page">
+		<div data-role="content">
+				<div data-role="collapsible" data-theme="a" data-content-theme="a">
+					<h4> One level deep now</h4>
+					<div data-role="collapsible" data-theme="a" data-content-theme="a">
+						<h3> Two level deep now</h3>
+						<div data-role="collapsible" data-theme="a" data-content-theme="a">
+							<h2> Three level deep now</h2>
+							<div data-role="collapsible" data-theme="a" data-content-theme="a">
+								<h1> For level deep now</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>	
+	</div>
+
+</body>
+
+</html>
